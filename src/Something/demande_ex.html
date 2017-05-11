@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demande</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    
+<!-- Titre du formulaire -->
+  <h2>Demande</h2>
+  <form class="form-horizontal" > <!-- method="post" action="demande_1.php" envoyer vers une nouvelle page les infos -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="sujet">Titre:</label>
+      <div class="col-sm-10">
+        <input type="textarea" class="form-control" id="sujet" placeholder="Exemple: Retirer un colis (H/F)">
+      </div>
+    </div>
+    
+<!-- Selection multiple : catégorie -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="sel1">Catégorie:</label>
+      
+    <div class="col-sm-10">
+      <select class="form-control" id="sel1">
+        <option>1</option> multiple class 
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    </div>
+    
+<!-- Selection simple : catégorie -->
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="lieu">Lieu :</label>
+      <div class="col-sm-10">
+      <select class="form-control" id="lieu">
+        <option value= "1">1</option> multiple class 
+        <option value= "1">2</option>
+        <option value= "1">3</option>
+        <option value= "1">4</option>
+        <option value= "1">5</option>
+      </select>
+    </div>
+    </div>
+   
+<!-- textarea : description -->
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="description">Description:</label>
+    <div class="col-sm-10">
+    	<textarea class="form-control" rows="5" id="description" placeholder="Décrivez votre offre !"></textarea>
+    </div>
+    </div>
+    
+<!-- textarea : date -->
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="date">Deadline:</label>
+    <div class="col-sm-10">
+    	<date class="form-control" id="date" placeholder="<?php date("Y-m-d"); ?>"></date>
+    </div>
+    </div>
+    
+<!-- textarea : date -->
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="date">Deadline:</label>
+    <div class="col-sm-10">
+    	<input type="date" class="form-control" id="date" min="17/04/2017">
+    </div>
+    </div>    
+    
+<!-- bouton : submit -->
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+    
+  </form>
+</div>
+
+
+</body>
+</html>
